@@ -22,7 +22,31 @@ if (additionalBlock.text === "This block was added using JavaScript's jQuery lib
   $("p").append(" This block was added using JavaScript's jQuery library. How awesome!");
 } else { $("title").append("CodePen - 2. hodina, 6 cviceni");
 }
+$("#button1").click(() => {
+  console.log("Yeah, you clicked me");
+})
 
+$("#button2").click(() => {
+  $("#button1").text("Text has been changed");
+})
+
+$("#button3").click(() => {
+  $("#button1").css("background", "yellow")
+  $("#button2").css("background", "yellow")
+  $("#button3").css("background", "yellow")
+})
+
+let counter = 0
+
+$("#button4").click (() => {
+  counter = counter + 1;
+  $("h4").text(counter);
+})
+
+$("#button5").click (() => {
+  counter = counter -1;
+  $("h4").text(counter);
+})
 
 //$("ul").append($myArray);
 //$("ul").append(document.createTextNode("<li>Jakub</li>"));
