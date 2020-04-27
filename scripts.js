@@ -6,6 +6,24 @@ $("ul").append("<li>Jan</li>");
 $("ul").append("<li>Anakin</li>");
 $("ul").append("<li>Ředitel</li>");
 
+//$("title").text("Added with javascript");
+
+let additionalBlock = {
+  title: "Added with javascript",
+  text: "This block was added using JavaScript's jQuery library. How awesome!"
+};
+
+if (additionalBlock.title === "Added with javascript") {
+  $("h1").append(" Added with javascript");
+} else { $("title").append("CodePen - 2. hodina, 6 cviceni");
+}
+
+if (additionalBlock.text === "This block was added using JavaScript's jQuery library. How awesome!") {
+  $("p").append(" This block was added using JavaScript's jQuery library. How awesome!");
+} else { $("title").append("CodePen - 2. hodina, 6 cviceni");
+}
+
+
 //$("ul").append($myArray);
 //$("ul").append(document.createTextNode("<li>Jakub</li>"));
 
